@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Murugadoss V - B.Tech graduate in AI & Data Science, Full Stack Developer, and Machine Learning enthusiast.">
+    <title>Murugadoss V | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Muru.g<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Toggler -->
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <!-- Mobile Navigation Toggler -->
+                <button id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section section-padding">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-greeting">Hello, I'm</div>
+                    <h1 class="hero-name">Murugadoss V</h1>
+                    <h2 class="hero-title">I'm a <span id="typing-text"></span><span class="cursor">|</span></h2>
+                    <p class="hero-desc">
+                        B.Tech graduate in Artificial Intelligence and Data Science. Passionate about building full-stack software solutions and applying data-driven Machine Learning algorithms to solve real-world challenges.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/murugadoss-v-78ba0034a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:murugadoss2004@gmail.com" aria-label="Email Me">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <span class="location-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Tamil Nadu, India
+                        </span>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="blob-glow"></div>
+                    <div class="hero-image-frame">
+                        <img src="developer_avatar.png" alt="Murugadoss V Profile Image" class="hero-image">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Qualifications</span>
+                    <h2 class="title">Education & Profile</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info card">
+                        <h3>About Me</h3>
+                        <p>
+                            Motivated and detail-oriented graduate focusing on Artificial Intelligence and Data Science. I bridge the gap between back-end infrastructure, front-end visual clarity, and data-driven analysis. My academic journey has been driven by solving complex logic problems and engineering robust software pipelines.
+                        </p>
+                        <div class="quick-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">7.52</span>
+                                <span class="stat-label">B.Tech CGPA</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">AI/ML Certifications</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Industry Internships</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-timeline">
+                        <h3>Education Timeline</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2022 - 2026</div>
+                                <div class="timeline-content card">
+                                    <h4>B.Tech in Artificial Intelligence and Data Science</h4>
+                                    <p class="timeline-institution">Vel Tech Multi Tech Dr.RR & Dr.SR Engineering College</p>
+                                    <div class="timeline-grade">CGPA: <strong>7.52</strong></div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2021 - 2022</div>
+                                <div class="timeline-content card">
+                                    <h4>HSE (Higher Secondary Education)</h4>
+                                    <p class="timeline-institution">Sri Annai Vidhyashram Matric Higher Secondary School</p>
+                                    <div class="timeline-grade">Grade: <strong>65%</strong></div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2019 - 2020</div>
+                                <div class="timeline-content card">
+                                    <h4>SSLC (Secondary School Leaving Certificate)</h4>
+                                    <p class="timeline-institution">Sri Annai Vidhyashram Matric Higher Secondary School</p>
+                                    <div class="timeline-grade">Grade: <strong>64%</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">My Arsenal</span>
+                    <h2 class="title">Skills & Toolkit</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="languages">Languages</button>
+                    <button class="filter-btn" data-filter="webdev">Web Dev</button>
+                    <button class="filter-btn" data-filter="data">Data & ML</button>
+                    <button class="filter-btn" data-filter="tools">Tools & Soft Skills</button>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category-card card" data-skill-type="languages">
+                        <div class="category-header">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">Java</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Python</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Web Development -->
+                    <div class="skills-category-card card" data-skill-type="webdev">
+                        <div class="category-header">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">React</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="75%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Spring Boot</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="70%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Node.js</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="65%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">HTML / CSS / JS</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="90%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Bootstrap</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases & ML -->
+                    <div class="skills-category-card card" data-skill-type="data">
+                        <div class="category-header">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                            </div>
+                            <h3>Databases & Data Science</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">MySQL</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Pandas / NumPy</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Matplotlib / Seaborn</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Scikit-learn (ML)</div>
+                                <div class="skill-progress-bar"><div class="progress" data-width="75%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Analytical & Soft Skills -->
+                    <div class="skills-category-card card" data-skill-type="tools">
+                        <div class="category-header">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </div>
+                            <h3>Tools & Soft Skills</h3>
+                        </div>
+                        <div class="soft-skills-badges">
+                            <span class="badge">Power BI</span>
+                            <span class="badge">MS Excel</span>
+                            <span class="badge">PowerPoint</span>
+                            <span class="badge">Creativity</span>
+                            <span class="badge">Adaptability</span>
+                            <span class="badge">Teamwork</span>
+                            <span class="badge">Problem Solving</span>
+                            <span class="badge">Critical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Internships Section -->
+        <section id="experience" class="section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Professional Path</span>
+                    <h2 class="title">Internships & Work</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="experience-grid">
+                    <!-- Internship 1 -->
+                    <div class="experience-card card">
+                        <div class="experience-glow"></div>
+                        <div class="exp-header">
+                            <div class="exp-role">
+                                <h3>Data Science Intern</h3>
+                                <div class="exp-company">AIGOALPHA TECH IT Solutions</div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date">Dec 2024</span>
+                                <span class="exp-type">Remote</span>
+                            </div>
+                        </div>
+                        <div class="exp-details">
+                            <p class="exp-project"><strong>Project:</strong> Employee Promotion Prediction</p>
+                            <p>Applied analytical models to forecast employee promotion cycles based on various key performance indicators (KPIs) and historic staff promotion records. Gained experience working with model classification and data pipeline architectures.</p>
+                            <div class="exp-tags">
+                                <span class="badge">Data Science</span>
+                                <span class="badge">Python</span>
+                                <span class="badge">Scikit-learn</span>
+                                <span class="badge">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Internship 2 -->
+                    <div class="experience-card card">
+                        <div class="experience-glow"></div>
+                        <div class="exp-header">
+                            <div class="exp-role">
+                                <h3>Web Development Intern</h3>
+                                <div class="exp-company">DLK Technologies Pvt. Ltd</div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date">Mar 2024</span>
+                                <span class="exp-type">On-site</span>
+                            </div>
+                        </div>
+                        <div class="exp-details">
+                            <p class="exp-project"><strong>Domain:</strong> Web Applications & Scripting</p>
+                            <p>Assisted in developing dynamic frontend features and designing interface templates. Learned responsive styling conventions and collaborated on maintaining standard code documentation.</p>
+                            <div class="exp-tags">
+                                <span class="badge">Web Development</span>
+                                <span class="badge">HTML</span>
+                                <span class="badge">CSS</span>
+                                <span class="badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">My Work</span>
+                    <h2 class="title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-container">
+                    <div class="project-card card">
+                        <div class="project-image-box">
+                            <!-- Code placeholder or custom pattern background -->
+                            <div class="project-overlay-pattern"></div>
+                            <div class="project-category">Full Stack Application</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Healthy Diet Suggester</h3>
+                            <p class="project-desc">
+                                A full-stack nutritional platform developed using Java, Python, and MySQL to help users manage their dietary intake effectively. The application features a responsive user interface built with HTML, CSS, and JavaScript that allows individuals to search for specific food items and receive comprehensive nutritional profiles, including protein content, calorie counts, and essential fat data. By leveraging a structured MySQL database to manage metadata, the system empowers health-conscious users and fitness enthusiasts to make data-driven decisions for meal planning and daily nutrient tracking.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="badge">Java</span>
+                                <span class="badge">Python</span>
+                                <span class="badge">MySQL</span>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">HTML5</span>
+                                <span class="badge">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Validations</span>
+                    <h2 class="title">Certifications</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card card">
+                        <div class="cert-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Java Full Stack</h3>
+                            <p class="cert-issuer">Wipro TalentNext</p>
+                            <span class="cert-tag">Java & Spring</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card card">
+                        <div class="cert-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Reinforcement Learning in AI</h3>
+                            <p class="cert-issuer">RETECH Solutions Pvt Ltd</p>
+                            <span class="cert-tag">Artificial Intelligence</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card card">
+                        <div class="cert-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Amazon Web Services</h3>
+                            <p class="cert-issuer">Capnis Infotech Pvt Ltd</p>
+                            <span class="cert-tag">Cloud Services</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card card">
+                        <div class="cert-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Data Analytics</h3>
+                            <p class="cert-issuer">IBM SkillsBuild</p>
+                            <span class="cert-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Reach Out</span>
+                    <h2 class="title">Contact Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: details -->
+                    <div class="contact-info-panel card">
+                        <h3>Let's build something amazing together</h3>
+                        <p>Feel free to reach out to me for internship offers, project collaborations, or full stack opportunities.</p>
+                        
+                        <div class="contact-methods">
+                            <!-- Mobile -->
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="item-text">
+                                    <span class="label">Mobile</span>
+                                    <a href="tel:+916382210325" class="value">+91 63822 10325</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="item-text">
+                                    <span class="label">Email</span>
+                                    <a href="mailto:murugadoss2004@gmail.com" class="value">murugadoss2004@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </div>
+                                <div class="item-text">
+                                    <span class="label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/murugadoss-v-78ba0034a/" target="_blank" rel="noopener noreferrer" class="value">linkedin.com/in/murugadoss-v-78ba0034a/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-panel card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" required placeholder="John Doe">
+                                    <span class="error-msg">Name is required</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" required placeholder="john@example.com">
+                                    <span class="error-msg">Enter a valid email address</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="Project Collaboration">
+                                <span class="error-msg">Subject is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" required placeholder="Hi Murugadoss, I'd like to talk about..."></textarea>
+                                <span class="error-msg">Message is required</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader"></span>
+                            </button>
+                        </form>
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Murugadoss V. All Rights Reserved.</p>
+            <p class="footer-note">Designed and built with passion &amp; vanilla code.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
